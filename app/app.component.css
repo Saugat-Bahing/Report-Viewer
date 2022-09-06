@@ -1,0 +1,237 @@
+.container {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  background-color: rgb(247, 247, 247);
+}
+
+.content {
+  padding: 20px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 100px;
+  /* border: 1px solid red; */
+  border-bottom: 1px solid rgb(247, 247, 247);
+  background-color: rgb(139, 139, 139);
+  color: white;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.title {
+  /* border: 1px solid blue; */
+  width: calc(100% - 100px);
+}
+
+.title h4 {
+  font-weight: normal;
+  /* border: 1px solid green; */
+}
+
+.title h2 {
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+
+.field-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  width: 600px;
+  justify-content: space-between;
+}
+
+.field {
+  display: flex;
+  width: 49%;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.field input {
+  outline: none;
+  max-width: 350px;
+  width: 100%;
+  height: 25px;
+  place-content: 10px;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+
+.field label {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.field-spacing {
+  margin-right: 20px;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 50px;
+  /* border: 1px solid red; */
+}
+
+.submit-btn {
+  height: 33px;
+  width: 200px;
+  margin-left: 15px;
+  background-color: rgb(9, 132, 247);
+  color: white;
+  border: 1px solid rgb(9, 132, 247);
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+}
+
+.result-container {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+.result-caption {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.result {
+  border: 1px solid rgb(235, 221, 221);
+  width: 95%;
+  max-width: 800px;
+  background-color: rgb(245, 244, 244);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(192, 192, 192);
+}
+
+.student-details {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.report {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.report-table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+th {
+  width: 40%;
+  padding: 5px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-weight: normal;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.logo {
+  padding-left: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+.logo img {
+  height: 100%;
+}
+
+small {
+  width: 100%;
+  margin-bottom: 10px;
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    height: 80px;
+  }
+
+  .container {
+    min-height: calc(100vh - 80px);
+  }
+
+  .title h2 {
+    font-size: 1rem;
+  }
+
+  .title h2 {
+    font-size: 0.8rem;
+  }
+
+  .field-container {
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .field {
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .field-spacing {
+    margin: 0;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submit-btn {
+    margin: 0;
+  }
+
+  .no-result {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
